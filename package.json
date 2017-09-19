@@ -1,9 +1,9 @@
 {
   "name": "ck-stack",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An ES6 implementation of a stack",
   "main": "dist/index.js",
-  "module": "src/ck-stack.js",
+  "module": "src/stack.js",
   "scripts": {
     "build": "rollup -c && rollup -c rollup.min.js && rollup -c rollup.test.js",
     "prepublish": "npm run build",
