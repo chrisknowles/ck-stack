@@ -1,7 +1,7 @@
 import babel from 'rollup-plugin-babel';
 
 export default {
-  input: 'src/stack-umd.js',
+  input: 'src/stack.js',
   output: [
     {
       file: 'dist/index.js',

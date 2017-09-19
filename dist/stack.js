@@ -1,8 +1,8 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global.Stack = {})));
-}(this, (function (exports) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.Stack = factory());
+}(this, (function () { 'use strict';
 
 var toConsumableArray = function (arr) {
   if (Array.isArray(arr)) {
@@ -62,11 +62,11 @@ function main(state) {
 }
 
 function stack() {
-  return main([]);
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+  return main(state || []);
 }
 
-exports.stack = stack;
-
-Object.defineProperty(exports, '__esModule', { value: true });
+return stack;
 
 })));

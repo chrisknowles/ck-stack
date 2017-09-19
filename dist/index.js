@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var toConsumableArray = function (arr) {
   if (Array.isArray(arr)) {
     for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
@@ -60,7 +58,9 @@ function main(state) {
 }
 
 function stack() {
-  return main([]);
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+  return main(state || []);
 }
 
-exports.stack = stack;
+module.exports = stack;

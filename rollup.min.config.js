@@ -2,7 +2,7 @@ import babel from 'rollup-plugin-babel';
 import butternut from 'rollup-plugin-butternut';
 
 export default {
-  input: 'src/stack-umd.js',
+  input: 'src/stack.js',
   output: [
     {
       file: 'dist/stack.min.js',

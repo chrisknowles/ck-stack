@@ -27,15 +27,8 @@ function main(state) {
   }
 }
 
-function stack() {
-  return main([])
+function stack(state = false) {
+  return main(state || [])
 }
 
-function stackTest() {
-  const state = []
-  const stack = main(state)
-  return Object.assign({}, stack, {state})
-}
-
-export {stackTest}
 export default stack

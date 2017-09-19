@@ -1,5 +1,7 @@
 import test from 'tape'
-import {stackTest as stack} from '../src/stack.js'
+import Stack from '../src/stack-test.js'
+
+const stack = Stack.stackTest
 
 test('push', t => {
   const s = stack()

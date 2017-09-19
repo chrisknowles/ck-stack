@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "src/ck-stack.js",
   "scripts": {
-    "build": "rollup -c && rollup -c ./rollup.min.config.js",
+    "build": "rollup -c && rollup -c rollup.min.config.js",
     "prepublish": "npm run build",
     "test": "rollup ./test/index.js --e tape --output.format cjs | node | tap-difflet"
   },
