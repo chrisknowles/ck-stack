@@ -5,21 +5,23 @@ An ES6 implementation of a stack
 ## Usage
 
 ```
-$ npm install ck-stack
+$ npm install ck-stack --save
 ```
 
 ```javascript
 import stack from 'ck-stack';
+
+const s = stack()
 ```
 
 ```javascript
 <script type='text/javascript' src='/dist/ck-stack.js'></script>
 <script type='text/javascript' src='/dist/ck-stack.min.js'></script>
+
+const s = Stack()
 ```
 
 ```javascript
-const s = stack()
-
 s.push(1)
 s.push(2)
 s.push(3)
@@ -46,3 +48,13 @@ s.getValues
 s.isEmpty()
 // => true
 ```
+
+## Tests
+
+```
+$ npm run test
+```
+
+## License
+
+MIT - see LICENSE.md
